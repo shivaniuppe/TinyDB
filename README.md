@@ -1,10 +1,10 @@
-TinyDb - A Lightweight DBMS Tool
+# TinyDb - A Lightweight DBMS Tool
 
-Project Overview
+# Project Overview
 
 TinyDb is a lightweight, file-based database management system (DBMS) tool that simulates most of the core features of a traditional DBMS, such as MySQL. Instead of a complex back-end storage system, TinyDb uses a text file to store and manage the database structure and data. It allows users to perform operations like creating databases, tables, and handling data transactions, all within a simple interface.
 
-Features
+# Features
 
 User Authentication:
 Users can create an account, log in, and authenticate using security questions and answers.
@@ -21,7 +21,7 @@ Export database structures and data as SQL dump files.
 Transactions & Logging:
 Supports transactions with commit and rollback functionalities, along with query logging for auditing and performance tracking.
 
-How to Use
+# How to use
 
 Login & Setup:
 After launching TinyDb, users need to log in or create a new account. During registration, users are asked to set up a security question for future authentication.
@@ -39,7 +39,7 @@ Start transactions using START TRANSACTION;, use COMMIT; to save changes, or ROL
 ERD Generation & SQL Export:
 The system provides functionality to generate ERDs for visualizing the database structure and to export data as SQL dump files.
 
-Getting Started
+# Getting started
 
 To get started with TinyDb, clone the repository and compile the Java project. The project contains a simple main interface to begin entering queries.
 
@@ -53,7 +53,7 @@ cd dbms_builder
 javac -d bin src/org/example/*.java
 java -cp bin org.example.QueryProcessor
 
-Project Structure
+# Project Structure
 
 QueryProcessor.java:
 The main class that handles query input and manages the lifecycle of the system.
@@ -75,14 +75,14 @@ CREATE TABLE users (id INT, name VARCHAR(100));
 INSERT INTO users VALUES (1, 'John Doe');
 SELECT * FROM users;
 
-Logging
+# Logging
 
 Each query is logged with its execution time and timestamp for future reference. Log files are automatically generated in the system's log directory.
 
-Contributing
+# Contributing
 
 Feel free to submit issues or contribute to the development of TinyDb by submitting pull requests.
 
-License
+# License
 
 This project is licensed under the MIT License.
